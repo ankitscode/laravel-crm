@@ -7,7 +7,9 @@
                 <img src="{{asset('assets/images/logo-sm.png')}}" alt="" height="22">
             </span>
             <span class="logo-lg">
-                <h4 height="17" class="m-4" style="color:blue" >Hanging panda</h4> 
+                <h4 height="17" class="m-4" style="color:blue color: blue;
+                background-color: pink;
+                padding: 5px;" >Hanging Panda</h4> 
             </span>
         </a>
         <!-- Light Logo-->
