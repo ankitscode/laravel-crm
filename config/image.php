@@ -15,7 +15,9 @@ return [
     |
     */
 
-    'driver' => 'gd'
+    'driver' => 'gd',
+     'media_table_image_path'=>'storage/app/public/imagess',
+     'media_table_image_path'=>'storage/app/public/imagess'
     
 
 ];

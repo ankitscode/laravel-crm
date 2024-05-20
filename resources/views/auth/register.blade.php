@@ -10,16 +10,17 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
         integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <style>
-            .html,body{
-                background-color: #8EC5FC;
-                 background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
-            }
-            .cc{
-                margin-top: -0.1rem !important;
-            }
-            
-        </style>
+    <style>
+        .html,
+        body {
+            background-color: #8EC5FC;
+            background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+        }
+
+        .cc {
+            margin-top: -0.1rem !important;
+        }
+    </style>
 </head>
 
 <body>
@@ -46,8 +47,8 @@
                                                     class="form-control @error('name') is-invalid @enderror" " id=" username" name="name" placeholder="Enter username">
                                                 @error('name')
     <span class="invalid-feedback" role="alert">
-                                                                <strong>{{ $message }}</strong>
-                                                            </span>
+                                                                    <strong>{{ $message }}</strong>
+                                                                </span>
 @enderror
                                             </div>
                                             <div class="mb-2">
@@ -55,8 +56,8 @@
                                                 <input type="text" class="form-control @error('email') is-invalid @enderror" id="username" name="email" placeholder="Enter username">
                                                 @error('email')
     <span class="invalid-feedback" role="alert">
-                                                                <strong>{{ $message }}</strong>
-                                                            </span>
+                                                                    <strong>{{ $message }}</strong>
+                                                                </span>
 @enderror
                                             </div>
                                             <div class="mb-2">
@@ -64,8 +65,8 @@
                                                 <input type="text" class="form-control @error('phone') is-invalid @enderror" id="phone" name="phone_number" placeholder="mobile number">
                                                 @error('phone')
     <span class="invalid-feedback" role="alert">
-                                                                <strong>{{ $message }}</strong>
-                                                            </span>
+                                                                    <strong>{{ $message }}</strong>
+                                                                </span>
 @enderror
                                             </div>
                                             <div class="position-relative auth-pass-inputgroup mb-3">
@@ -74,8 +75,8 @@
                                                 <button class="btn btn-link position-absolute end-0 top-0 text-decoration-none text-muted" type="button" id="password-addon"><i class="ri-eye-fill align-middle"></i></button>
                                                 @error('password')
     <span class="invalid-feedback" role="alert">
-                                                                <strong>{{ $message }}</strong>
-                                                            </span>
+                                                                    <strong>{{ $message }}</strong>
+                                                                </span>
 @enderror
                                             </div>
                                     </div>
@@ -112,9 +113,9 @@
         
     </div>
     @section('script')
-                <script src="{{ URL::asset('assets/libs/particles.js/particles.js.min.js') }}"></script>
-                <script src="{{ URL::asset('assets/js/pages/particles.app.js') }}"></script>
-                <script src="{{ URL::asset('assets/js/pages/password-addon.init.js') }}"></script>
-            </body>
+                    <script src="{{ URL::asset('assets/libs/particles.js/particles.js.min.js') }}"></script>
+                    <script src="{{ URL::asset('assets/js/pages/particles.app.js') }}"></script>
+                    <script src="{{ URL::asset('assets/js/pages/password-addon.init.js') }}"></script>
+                </body>
 
-            </html>
+                </html>

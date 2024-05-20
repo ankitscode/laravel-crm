@@ -26,7 +26,7 @@
                             <div class="py-3">
                                 <label for="image" class="form-label">Profile</label>
                                 <div class="d-flex align-items-center">
-                                    <img src="{{ asset('storage/'.$user->image) }}" alt="Profile Image" class="img-thumbnail img-icon-size me-3">
+                                    <img src="{{ asset('storage/'.$user->media->name) }}" alt="Profile Image" class="img-thumbnail img-icon-size me-3">
                                     <input type="file" class="form-control" name="image" accept="image/*">
                                 </div>
                             </div>
@@ -52,14 +52,14 @@
                                 <label for="" class="from-label">Thumbnail</label> --}}
                                 <input type="file" class="form-control" name="thumbnail_name" accept="image/*" hidden>
                             {{-- </div> --}}
+                            {{-- <div class="py-3">
+                                <label for="" class="from-label">Created By</label> --}}
+                                <input type="text" class="form-control" name="created_by" accept="" hidden>
+                            {{-- </div>
                             <div class="py-3">
-                                <label for="" class="from-label">Created By</label>
-                                <input type="text" class="form-control" name="created_by" accept="">
-                            </div>
-                            <div class="py-3">
-                                <label for="" class="from-label">Updated By</label>
-                                <input type="text" class="form-control" name="updated_by" accept="">
-                            </div>
+                                <label for="" class="from-label">Updated By</label> --}}
+                                <input type="text" class="form-control" name="updated_by" accept="" hidden>
+                            {{-- </div> --}}
                             <div class="py-3">
                                 <label for="" class="from-label">Name</label>
                                 <input type="text" class="form-control" name="name" value="{{ $user->name }}">
@@ -89,15 +89,11 @@
                                 </span>
                                 <div class="py-3">
                                     <button type="submit" class="btn btn-primary mb-2">Update</button>
+                                </div>
                         </form>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-
-    </div>
-    </div>
-    </div>
     </div>
     @endsection

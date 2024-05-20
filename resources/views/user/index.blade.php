@@ -42,8 +42,9 @@
                                     @foreach ($users as $user)
                                         <tr>
                                             <td>{{ $rowID++ }}</td>
-                                            <td> <img src="{{ asset('storage/'. $user->image) }}" width="40px"
-                                                    height="40px" /></td>
+                                            <td> <img
+                                                    src="{{ isset($user->media) && !empty($user->media->name) ? asset('storage/' . $user->media->name) : '' }}"
+                                                    width="40px" height="40px" /></td>
                                             <td>{{ $user->name }}</td>
                                             <td>{{ $user->email }}</td>
                                             <td>{{ $user->phone_number }}</td>
